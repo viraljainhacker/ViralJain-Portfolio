@@ -7,10 +7,19 @@
 
     <meta
       name="description"
-      content="Viral Jain - BCA Student, Web Developer, Web Designer and Tech Enthusiast."
+      content="Viral Jain - BCA 5th Semester Student, Web Developer, Game Developer and Creative Technologist."
     />
 
-    <title>Viral Jain | Web Developer</title>
+    <meta
+      name="keywords"
+      content="Viral Jain, Web Developer, BCA Student, Game Developer, HTML, CSS, JavaScript, C++, MySQL, Portfolio"
+    />
+
+    <meta name="author" content="Viral Jain" />
+
+    <meta name="theme-color" content="#050707" />
+
+    <title>Viral Jain | Web Developer & Game Developer</title>
 
     <link rel="stylesheet" href="style.css" />
   </head>
@@ -21,60 +30,103 @@
     ========================== -->
 
     <nav class="navbar">
-      <div class="logo">Viral Jain</div>
+      <a href="index.html" class="logo">Viral Jain</a>
 
-      <button class="menu-toggle" id="menuToggle" aria-label="Open navigation">
-        ☰
-      </button>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
 
-      <div class="nav-links" id="navLinks">
-        <a href="home.html">Home</a>
         <a href="about.html">About</a>
+
         <a href="projects.html">Projects</a>
+
+        <a href="games.html">Games</a>
+
+        <a href="certifications.html">Certificates</a>
+
         <a href="gallery.html">Gallery</a>
+
         <a href="contact.html">Contact</a>
       </div>
+
+      <button class="menu-toggle" id="menuToggle">
+        <i class="fas fa-bars"></i>
+      </button>
     </nav>
 
     <!-- =========================
-         HERO
+         HERO SECTION
     ========================== -->
 
     <section class="hero">
-      <p class="hero-small-text">WELCOME TO MY PORTFOLIO</p>
+      <div class="hero-content">
+        <p class="hero-small-text">WELCOME TO MY DIGITAL WORLD</p>
 
-      <h1>Hi, I'm <span>Viral Jain</span></h1>
+        <h1>Hi, I'm <span>Viral Jain</span></h1>
 
-      <h2>
-        <span class="typing"></span>
-      </h2>
+        <h2>
+          <span class="typing"></span>
+        </h2>
 
-      <p class="hero-description">
-        BCA student passionate about web development, programming, creative
-        design and technology. I enjoy building useful, responsive and visually
-        appealing digital experiences.
-      </p>
+        <p class="hero-description">
+          BCA 5th Semester student passionate about web development,
+          programming, game development, creative design and technology. I enjoy
+          turning ideas into useful, interactive and visually engaging digital
+          experiences.
+        </p>
 
-      <div class="hero-buttons">
-        <a href="projects.html" class="btn"> View My Work </a>
+        <div class="hero-buttons">
+          <a href="projects.html" class="btn"> View My Work → </a>
 
-        <a href="Viral_Jain_Resume.pdf" class="btn-outline" download>
-          Download Resume
-        </a>
+          <a href="games.html" class="btn-outline"> 🎮 Play My Games </a>
+
+          <a href="Viral_Jain_Resume.pdf" class="btn-outline" download>
+            Download Resume
+          </a>
+        </div>
+
+        <p class="highlight">
+          Currently seeking internship opportunities in Web Development,
+          Software Development and related technology roles.
+        </p>
       </div>
-
-      <p class="highlight">
-        Currently seeking internship opportunities in Web Development.
-      </p>
     </section>
 
     <!-- =========================
-         QUICK INTRO
+         QUICK STATS
+    ========================== -->
+
+    <section class="stats-section">
+      <div class="stats-container">
+        <div class="stat-box">
+          <strong>5th</strong>
+          <span>Semester</span>
+        </div>
+
+        <div class="stat-box">
+          <strong>10+</strong>
+          <span>Projects</span>
+        </div>
+
+        <div class="stat-box">
+          <strong>🎮</strong>
+          <span>Games</span>
+        </div>
+
+        <div class="stat-box">
+          <strong>🏆</strong>
+          <span>Certificates</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================
+         INTRO / ABOUT PREVIEW
     ========================== -->
 
     <section class="intro-section">
       <div class="section-heading">
         <p>GET TO KNOW ME</p>
+
         <h2>Turning Ideas Into Digital Experiences</h2>
       </div>
 
@@ -83,15 +135,14 @@
           <h3>Hello, I'm Viral 👋</h3>
 
           <p>
-            I am a BCA student with a strong interest in web development,
-            programming and UI design. I love learning new technologies and
-            using them to create projects that are simple, useful and visually
-            engaging.
+            I am a BCA 5th Semester student with a strong interest in web
+            development, programming, game development and UI design. I enjoy
+            learning new technologies and applying them to real-world projects.
           </p>
 
           <p>
-            Along with coding, I also enjoy photography, videography, editing
-            and exploring creative ideas.
+            Along with coding, I also enjoy photography, videography, photo
+            editing, video editing and exploring creative ideas.
           </p>
 
           <a href="about.html" class="text-link"> More About Me → </a>
@@ -100,7 +151,7 @@
         <div class="intro-card">
           <div class="intro-card-item">
             <strong>BCA</strong>
-            <span>Student</span>
+            <span>5th Semester</span>
           </div>
 
           <div class="intro-card-item">
@@ -109,13 +160,13 @@
           </div>
 
           <div class="intro-card-item">
-            <strong>Creative</strong>
-            <span>Thinker</span>
+            <strong>Game</strong>
+            <span>Development</span>
           </div>
 
           <div class="intro-card-item">
-            <strong>Future</strong>
-            <span>Full Stack Developer</span>
+            <strong>Creative</strong>
+            <span>Technology</span>
           </div>
         </div>
       </div>
@@ -128,32 +179,89 @@
     <section class="skills">
       <div class="section-heading">
         <p>WHAT I WORK WITH</p>
-        <h2>My Skills</h2>
+
+        <h2>Skills & Technologies</h2>
       </div>
 
       <div class="skills-container">
+        <!-- Web Development -->
+
         <div class="skill-box">
-          <span class="skill-icon">&lt;/&gt;</span>
+          <span class="skill-icon"> &lt;/&gt; </span>
+
           <strong>HTML</strong>
-          <small>Web Structure</small>
+
+          <small> Web Structure </small>
         </div>
 
         <div class="skill-box">
-          <span class="skill-icon">#</span>
+          <span class="skill-icon"> # </span>
+
           <strong>CSS</strong>
-          <small>Web Styling</small>
+
+          <small> Web Styling </small>
         </div>
 
         <div class="skill-box">
-          <span class="skill-icon">C++</span>
+          <span class="skill-icon"> JS </span>
+
+          <strong>JavaScript</strong>
+
+          <small> Web Interaction </small>
+        </div>
+
+        <!-- Programming -->
+
+        <div class="skill-box">
+          <span class="skill-icon"> C </span>
+
+          <strong>C</strong>
+
+          <small> Programming </small>
+        </div>
+
+        <div class="skill-box">
+          <span class="skill-icon"> C++ </span>
+
           <strong>C++</strong>
-          <small>Programming</small>
+
+          <small> Programming </small>
         </div>
 
         <div class="skill-box">
-          <span class="skill-icon">DB</span>
+          <span class="skill-icon"> J </span>
+
+          <strong>Java</strong>
+
+          <small> Programming </small>
+        </div>
+
+        <!-- Database -->
+
+        <div class="skill-box">
+          <span class="skill-icon"> DB </span>
+
           <strong>MySQL</strong>
-          <small>Database</small>
+
+          <small> Database </small>
+        </div>
+
+        <!-- Tools -->
+
+        <div class="skill-box">
+          <span class="skill-icon"> VS </span>
+
+          <strong>VS Code</strong>
+
+          <small> Development Tool </small>
+        </div>
+
+        <div class="skill-box">
+          <span class="skill-icon"> GH </span>
+
+          <strong>GitHub</strong>
+
+          <small> Version Control </small>
         </div>
       </div>
     </section>
@@ -165,6 +273,7 @@
     <section class="featured-project">
       <div class="section-heading">
         <p>MY WORK</p>
+
         <h2>Featured Project</h2>
       </div>
 
@@ -174,31 +283,200 @@
         <div class="featured-project-content">
           <span class="project-label"> WEB DEVELOPMENT </span>
 
-          <h3>Bus Ticket Booking System</h3>
+          <h3>Tripzo Bus Booking</h3>
 
           <p>
-            A web-based ticket booking system designed to make bus ticket
-            booking easier. The project includes seat management, fare
-            calculation and passenger handling.
+            A web-based bus ticket booking system designed to make online bus
+            booking simple and interactive. The project includes route
+            selection, passenger information, seat selection, fare calculation
+            and booking flow.
           </p>
 
           <div class="project-tags">
             <span>HTML</span>
+
             <span>CSS</span>
+
             <span>JavaScript</span>
+
+            <span>LocalStorage</span>
           </div>
 
-          <a
-            href="https://viraljainhacker.github.io/Tripzo/"
-            target="_blank"
-            class="btn"
-          >
-            View Live Project →
-          </a>
+          <div class="project-buttons">
+            <a
+              href="https://viraljainhacker.github.io/Tripzo/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn"
+            >
+              View Live Project →
+            </a>
+
+            <a href="projects.html" class="btn-outline"> View Details </a>
+          </div>
         </div>
       </div>
 
       <a href="projects.html" class="all-projects"> View All Projects → </a>
+    </section>
+
+    <!-- =========================
+         GAME ARCADE
+    ========================== -->
+
+    <section class="game-section">
+      <div class="section-heading">
+        <p>GAME DEVELOPMENT</p>
+
+        <h2>🎮 Game Arcade</h2>
+      </div>
+
+      <p class="section-description">
+        Explore the interactive games and experiments I have created while
+        learning programming, game logic and web development.
+      </p>
+
+      <div class="game-preview-container">
+        <!-- Featured Game -->
+
+        <div class="game-card featured-game-card">
+          <div class="game-card-image game-placeholder">
+            <span> 🎮 </span>
+          </div>
+
+          <div class="game-card-content">
+            <span class="project-label"> FEATURED GAME </span>
+
+            <h3>Gun-Duel</h3>
+
+            <p>
+              An offline fighting game featuring 2-player gameplay,
+              player-vs-bot mode, multiple levels and interactive gameplay
+              systems.
+            </p>
+
+            <div class="project-tags">
+              <span>HTML</span>
+
+              <span>CSS</span>
+
+              <span>JavaScript</span>
+            </div>
+
+            <a href="games.html" class="btn"> Enter Game Arcade → </a>
+          </div>
+        </div>
+
+        <!-- Other Games Preview -->
+
+        <div class="game-mini-grid">
+          <div class="game-mini-card">
+            <span> 🎯 </span>
+
+            <h4>Flash Games</h4>
+
+            <p>Interactive browser games</p>
+          </div>
+
+          <div class="game-mini-card">
+            <span> 🕹️ </span>
+
+            <h4>Game Experiments</h4>
+
+            <p>Small gameplay projects</p>
+          </div>
+
+          <div class="game-mini-card">
+            <span> 💻 </span>
+
+            <h4>Game Development</h4>
+
+            <p>Learning through projects</p>
+          </div>
+        </div>
+      </div>
+
+      <a href="games.html" class="all-projects"> View All Games → </a>
+    </section>
+
+    <!-- =========================
+         CERTIFICATIONS
+    ========================== -->
+
+    <section class="certificates-section">
+      <div class="section-heading">
+        <p>LEARNING & ACHIEVEMENTS</p>
+
+        <h2>🏆 Certifications</h2>
+      </div>
+
+      <p class="section-description">
+        A collection of certificates and achievements earned through academics,
+        volunteering, learning and other activities.
+      </p>
+
+      <div class="certificate-preview-grid">
+        <!-- Certificate 1 -->
+
+        <div class="certificate-card">
+          <div class="certificate-icon">📜</div>
+
+          <h3>Academic Certificate</h3>
+
+          <p>Academic achievement and participation.</p>
+
+          <a
+            href="Academics_Certificate.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-link"
+          >
+            View Certificate →
+          </a>
+        </div>
+
+        <!-- Certificate 2 -->
+
+        <div class="certificate-card">
+          <div class="certificate-icon">🤝</div>
+
+          <h3>Volunteer Certificate</h3>
+
+          <p>Certificate of volunteering and participation.</p>
+
+          <a
+            href="Volunteer Certificate.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-link"
+          >
+            View Certificate →
+          </a>
+        </div>
+
+        <!-- Certificate 3 -->
+
+        <div class="certificate-card">
+          <div class="certificate-icon">❤️</div>
+
+          <h3>Organ Donation Certificate</h3>
+
+          <p>Certificate related to organ donation awareness.</p>
+
+          <a
+            href="Organ Donation Certificate.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-link"
+          >
+            View Certificate →
+          </a>
+        </div>
+      </div>
+
+      <a href="certifications.html" class="all-projects">
+        View All Certifications →
+      </a>
     </section>
 
     <!-- =========================
@@ -208,7 +486,8 @@
     <section class="creative-section">
       <div class="section-heading">
         <p>BEYOND CODING</p>
-        <h2>My Creative Side</h2>
+
+        <h2>📸 My Creative Side</h2>
       </div>
 
       <p class="creative-description">
@@ -217,7 +496,85 @@
         perspective.
       </p>
 
+      <div class="creative-highlights">
+        <div class="creative-item">
+          <span> 📷 </span>
+
+          <h3>Photography</h3>
+
+          <p>Capturing places, moments and stories.</p>
+        </div>
+
+        <div class="creative-item">
+          <span> 🎥 </span>
+
+          <h3>Videography</h3>
+
+          <p>Creating cinematic and travel content.</p>
+        </div>
+
+        <div class="creative-item">
+          <span> ✂️ </span>
+
+          <h3>Editing</h3>
+
+          <p>Photo and video editing experiments.</p>
+        </div>
+      </div>
+
       <a href="gallery.html" class="btn-outline"> Explore My Gallery → </a>
+    </section>
+
+    <!-- =========================
+         EDUCATION
+    ========================== -->
+
+    <section class="education-section">
+      <div class="section-heading">
+        <p>MY JOURNEY</p>
+
+        <h2>🎓 Education</h2>
+      </div>
+
+      <div class="education-card">
+        <div class="education-year">2024 — 2027</div>
+
+        <div class="education-content">
+          <span class="project-label"> CURRENTLY PURSUING </span>
+
+          <h3>Bachelor of Computer Applications</h3>
+
+          <p>BCA — 5th Semester</p>
+
+          <p>PIMS Institute of Computer Sciences</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================
+         GITHUB / DEVELOPER CTA
+    ========================== -->
+
+    <section class="developer-section">
+      <div class="section-heading">
+        <p>CODE • BUILD • LEARN</p>
+
+        <h2>Explore My Code</h2>
+      </div>
+
+      <p>
+        I enjoy building projects, experimenting with technologies and
+        continuously improving my development skills.
+      </p>
+
+      <a
+        href="https://github.com/viraljainhacker"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="btn"
+      >
+        Visit My GitHub →
+      </a>
     </section>
 
     <!-- =========================
@@ -237,7 +594,13 @@
         interesting projects.
       </p>
 
-      <a href="contact.html" class="btn"> Contact Me → </a>
+      <div class="contact-buttons">
+        <a href="contact.html" class="btn"> Contact Me → </a>
+
+        <a href="mailto:viralj6002@gmail.com" class="btn-outline">
+          Send an Email
+        </a>
+      </div>
     </section>
 
     <!-- =========================
@@ -245,8 +608,40 @@
     ========================== -->
 
     <footer>
-      <p>Viral Jain</p>
+      <div class="footer-content">
+        <div class="footer-brand">
+          <h3>Viral Jain</h3>
+
+          <p>BCA Student • Web Developer • Game Developer</p>
+        </div>
+
+        <div class="footer-links">
+          <a href="index.html"> Home </a>
+
+          <a href="about.html"> About </a>
+
+          <a href="projects.html"> Projects </a>
+
+          <a href="games.html"> Games </a>
+
+          <a href="certifications.html"> Certificates </a>
+
+          <a href="gallery.html"> Gallery </a>
+
+          <a href="contact.html"> Contact </a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>Viral Jain</p>
+
+        <p>Built with HTML, CSS & JavaScript.</p>
+      </div>
     </footer>
+
+    <!-- =========================
+         JAVASCRIPT
+    ========================== -->
 
     <script src="script.js"></script>
   </body>
