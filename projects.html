@@ -1,63 +1,294 @@
 <!doctype html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta
+      name="description"
+      content="Explore Viral Jain's web development projects, applications, games, and creative digital work."
+    />
+
+    <meta
+      name="keywords"
+      content="Viral Jain Projects, Web Development Projects, Game Development, HTML, CSS, JavaScript, MySQL"
+    />
+
+    <meta name="author" content="Viral Jain" />
+
+    <meta name="theme-color" content="#050707" />
+
     <title>Projects | Viral Jain</title>
+
     <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
+    <!-- =========================
+       NAVBAR
+  ========================== -->
+
     <nav class="navbar">
-      <div class="logo">Viral Jain</div>
+      <a href="index.html" class="logo">Viral Jain</a>
 
-      <button class="menu-toggle" id="menuToggle" aria-label="Open navigation">
-        ☰
-      </button>
-
-      <div class="nav-links" id="navLinks">
+      <div class="nav-links">
         <a href="index.html">Home</a>
+
         <a href="about.html">About</a>
+
         <a href="projects.html">Projects</a>
+
+        <a href="games.html">Games</a>
+
+        <a href="certifications.html">Certificates</a>
+
         <a href="gallery.html">Gallery</a>
+
         <a href="contact.html">Contact</a>
       </div>
+
+      <button class="menu-toggle" id="menuToggle">
+        <i class="fas fa-bars"></i>
+      </button>
     </nav>
 
-    <section class="page-section">
-      <h1>My Projects</h1>
+    <!-- =========================
+       PROJECTS PAGE
+  ========================== -->
 
-      <div class="project-card">
-        <h3>Bus Ticket Booking System</h3>
-        <p>
-          A web application that allows ticket booking, seat management, fare
-          calculation, and passenger handling.
-        </p>
+    <main>
+      <!-- =========================
+         PROJECTS HERO
+    ========================== -->
 
-        <div class="project-buttons">
-          <a
-            href="https://viraljainhacker.github.io/Tripzo/"
-            target="_blank"
-            class="btn"
-          >
-            Live Demo
-          </a>
+      <section class="page-section projects-page">
+        <div class="section-heading">
+          <span class="section-tag"> MY WORK </span>
+
+          <h1>
+            Projects &amp;
+            <span class="gradient-text"> Creations </span>
+          </h1>
+
+          <p>
+            A collection of projects I have built while learning, experimenting
+            and exploring web development, programming, game development and
+            technology.
+          </p>
+        </div>
+
+        <!-- =========================
+           PROJECT GRID
+      ========================== -->
+
+        <div class="projects-grid">
+          <!-- PROJECT 1 -->
+
+          <article class="project-card">
+            <div class="project-icon">🚌</div>
+
+            <div class="project-content">
+              <span class="project-category"> WEB APPLICATION </span>
+
+              <h3>Tripzo Bus Booking</h3>
+
+              <p>
+                A web-based bus ticket booking system designed to make online
+                bus booking simple and interactive. The project includes route
+                selection, passenger information, seat selection, fare
+                calculation and booking flow.
+              </p>
+
+              <div class="project-tech">
+                <span> HTML </span>
+
+                <span> CSS </span>
+
+                <span> JavaScript </span>
+
+                <span> LocalStorage </span>
+              </div>
+
+              <div class="project-buttons">
+                <a
+                  href="https://viraljainhacker.github.io/Tripzo/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn"
+                >
+                  Live Demo →
+                </a>
+
+                <a
+                  href="https://github.com/viraljainhacker"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn-outline"
+                >
+                  GitHub
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- FUTURE PROJECT -->
+
+          <article class="project-card project-coming-soon">
+            <div class="project-icon">🚀</div>
+
+            <div class="project-content">
+              <span class="project-category"> MORE COMING SOON </span>
+
+              <h3>New Project</h3>
+
+              <p>
+                More web applications, games, experiments and creative
+                technology projects will be added here as they are completed.
+              </p>
+
+              <div class="project-buttons">
+                <span class="btn-outline"> Coming Soon </span>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- =========================
+           GAMES SECTION
+      ========================== -->
+
+        <div class="projects-extra-section">
+          <div class="section-heading">
+            <span class="section-tag"> GAME DEVELOPMENT </span>
+
+            <h2>
+              Flash Games &amp;
+              <span class="gradient-text"> Experiments </span>
+            </h2>
+
+            <p>
+              Interactive games and small experiments created while exploring
+              game development, programming and gameplay logic.
+            </p>
+          </div>
+
+          <div class="game-grid">
+            <!-- GUN-DUEL -->
+
+            <article class="game-card">
+              <div class="game-card-content">
+                <div class="game-icon">🎮</div>
+
+                <span class="game-label"> FEATURED GAME </span>
+
+                <h3>Gun-Duel</h3>
+
+                <p>
+                  An offline fighting game featuring 2-player gameplay,
+                  player-vs-bot mode, multiple levels and interactive gameplay
+                  systems.
+                </p>
+
+                <div class="project-tags">
+                  <span> HTML </span>
+
+                  <span> CSS </span>
+
+                  <span> JavaScript </span>
+                </div>
+
+                <a href="games.html" class="btn"> View Game → </a>
+              </div>
+            </article>
+
+            <!-- COMING SOON -->
+
+            <article class="game-card">
+              <div class="game-card-content">
+                <div class="game-icon">🕹️</div>
+
+                <span class="game-label"> MORE GAMES </span>
+
+                <h3>More Games Coming Soon</h3>
+
+                <p>
+                  New browser games and interactive experiments will appear here
+                  as they are completed.
+                </p>
+
+                <span class="btn-outline"> Coming Soon </span>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <!-- =========================
+           CTA
+      ========================== -->
+
+        <div class="project-cta">
+          <span class="section-tag"> HAVE AN IDEA? </span>
+
+          <h2>
+            Let's Build Something
+            <span class="gradient-text"> Amazing </span>
+          </h2>
+
+          <p>
+            I'm always interested in creating new projects, experimenting with
+            technology and turning ideas into real digital experiences.
+          </p>
+
+          <div class="project-buttons">
+            <a href="contact.html" class="btn"> Let's Connect → </a>
+
+            <a href="games.html" class="btn-outline"> Explore Games </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- =========================
+       FOOTER
+  ========================== -->
+
+    <footer>
+      <div class="footer-content">
+        <div class="footer-brand">
+          <h3>Viral Jain</h3>
+
+          <p>BCA Student • Web Developer • Game Developer</p>
+        </div>
+
+        <div class="footer-links">
+          <a href="index.html"> Home </a>
+
+          <a href="about.html"> About </a>
+
+          <a href="projects.html"> Projects </a>
+
+          <a href="games.html"> Games </a>
+
+          <a href="certifications.html"> Certificates </a>
+
+          <a href="gallery.html"> Gallery </a>
+
+          <a href="contact.html"> Contact </a>
         </div>
       </div>
 
-      <!-- <div class="project-card">
-        <h3>Abeerah One Stop Solutions</h3>
-        <p>
-          Static business website developed using HTML & CSS with responsive
-          layout and professional UI.
-        </p>
-        <p><strong>Status:</strong> Coming Soon</p>
-      </div> -->
-    </section>
+      <div class="footer-bottom">
+        <p>Viral Jain</p>
 
-    <footer>
-      <p>Viral Jain</p>
+        <p>Built with HTML, CSS &amp; JavaScript.</p>
+      </div>
     </footer>
+
+    <!-- =========================
+       JAVASCRIPT
+  ========================== -->
+
     <script src="script.js"></script>
   </body>
 </html>
