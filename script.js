@@ -122,65 +122,59 @@ navigationLinks.forEach((link) => {
 ========================================================= */
 
 const galleryImages = document.querySelectorAll(".gallery-img");
-
 const lightbox = document.getElementById("lightbox");
-
 const lightboxImage = document.getElementById("lightboxImage");
-
 const lightboxClose = document.getElementById("lightboxClose");
 
 function openLightbox(image) {
-  if (!lightbox || !lightboxImage) {
-    return;
-  }
+    if (!lightbox || !lightboxImage) {
+        console.error("Lightbox HTML elements are missing!");
+        return;
+    }
 
-  lightboxImage.src = image.src;
+    lightboxImage.src = image.currentSrc || image.src;
+    lightboxImage.alt = image.alt || "Gallery Image";
 
-  lightboxImage.alt = image.alt || "Gallery Image";
+    lightbox.classList.add("active");
+    lightbox.setAttribute("aria-hidden", "false");
 
-  lightbox.classList.add("active");
-
-  document.body.style.overflow = "hidden";
+    document.body.style.overflow = "hidden";
 }
 
 function closeLightbox() {
-  if (!lightbox) {
-    return;
-  }
+    if (!lightbox) return;
 
-  lightbox.classList.remove("active");
+    lightbox.classList.remove("active");
+    lightbox.setAttribute("aria-hidden", "true");
 
-  document.body.style.overflow = "";
+    document.body.style.overflow = "";
 }
 
 galleryImages.forEach((image) => {
-  image.addEventListener("click", () => {
-    openLightbox(image);
-  });
+    image.style.cursor = "pointer";
+
+    image.addEventListener("click", () => {
+        openLightbox(image);
+    });
 });
 
 if (lightboxClose) {
-  lightboxClose.addEventListener("click", closeLightbox);
+    lightboxClose.addEventListener("click", closeLightbox);
 }
-
-/* Click outside image */
 
 if (lightbox) {
-  lightbox.addEventListener("click", (event) => {
-    if (event.target === lightbox) {
-      closeLightbox();
-    }
-  });
+    lightbox.addEventListener("click", (event) => {
+        if (event.target === lightbox) {
+            closeLightbox();
+        }
+    });
 }
 
-/* ESC key */
-
 document.addEventListener("keydown", (event) => {
-  if (event.key === "Escape") {
-    closeLightbox();
-  }
+    if (event.key === "Escape") {
+        closeLightbox();
+    }
 });
-
 /* =========================================================
    SCROLL REVEAL ANIMATION
 ========================================================= */
