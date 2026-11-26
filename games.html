@@ -1,37 +1,92 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Games | Viral Jain</title>
+    <title>Games | Viral Jain</title>
 
-  <meta
-    name="description"
-    content="Explore games created by Viral Jain, including Gun-Duel, an offline fighting game."
-  />
+    <meta
+      name="description"
+      content="Explore games created by Viral Jain, including Gun-Duel, Shadow Clash, Neon Ball and Anaconda Game."
+    />
 
-  <meta
-    name="keywords"
-    content="Viral Jain, Games, Gun Duel, Web Games, JavaScript Games, BCA Student, Game Developer"
-  />
+    <meta
+      name="keywords"
+      content="Viral Jain, Games, Gun Duel, Shadow Clash, Neon Ball, Anaconda Game, Web Games, JavaScript Games"
+    />
 
-  <meta name="author" content="Viral Jain" />
+    <meta name="author" content="Viral Jain" />
+    <meta name="theme-color" content="#050707" />
 
-  <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css" />
 
-  <!-- Font Awesome -->
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-  />
-</head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
 
-<body>
+    <style>
+      /* ================= GAME STATUS BADGE ================= */
 
-      <!-- =========================
-       NAVBAR
-  ========================== -->
+      .game-status {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 9px;
+        padding: 9px 16px;
+        margin-top: 18px;
+        border: 1px solid rgba(255, 190, 70, 0.3);
+        border-radius: 30px;
+        background: rgba(255, 190, 70, 0.08);
+        color: #ffc76b;
+        font-size: 12px;
+        font-weight: 600;
+        letter-spacing: 0.7px;
+        line-height: 1;
+        white-space: nowrap;
+      }
+
+      .game-status .status-dot {
+        display: inline-block;
+        width: 8px;
+        height: 8px;
+        min-width: 8px;
+        border-radius: 50%;
+        background: #ffc76b;
+        box-shadow: 0 0 8px rgba(255, 199, 107, 0.7);
+      }
+
+      /* ================= OTHER GAME CARDS ================= */
+
+      .game-card-content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .game-card-content .game-status {
+        margin-top: auto;
+        padding-top: 9px;
+      }
+
+      .game-card-content .project-tags {
+        margin-top: 15px;
+      }
+
+      /* ================= MOBILE FIX ================= */
+
+      @media (max-width: 600px) {
+        .game-status {
+          font-size: 11px;
+          padding: 8px 13px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- ================= NAVBAR ================= -->
 
     <nav class="navbar">
       <div class="logo">Viral Jain</div>
@@ -47,418 +102,437 @@
       </button>
 
       <div class="nav-links" id="navLinks">
-        <a href="index.html"> Home </a>
-
-        <a href="about.html"> About </a>
-
-        <a href="projects.html"> Projects </a>
-
-        <a href="games.html" class="active"> Games </a>
-
-        <a href="certifications.html"> Certificates </a>
-
-        <a href="gallery.html"> Gallery </a>
-
-        <a href="contact.html"> Contact </a>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="games.html" class="active">Games</a>
+        <a href="certifications.html">Certificates</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
       </div>
     </nav>
 
+    <!-- ================= MAIN ================= -->
 
-  <!-- ================= MAIN ================= -->
+    <main class="page games-page">
+      <!-- ================= HERO ================= -->
 
-  <main class="page games-page">
-
-    <!-- ================= HERO ================= -->
-
-    <section class="section-heading page-hero">
-
-      <span class="section-tag">
-        <i class="fas fa-gamepad"></i>
-        MY GAME PROJECT
-      </span>
-
-      <h1>
-        <span class="gradient-text">GAME</span> ARCADE
-      </h1>
-
-      <p>
-        A collection of games and interactive experiments created while
-        learning and building with web technologies.
-      </p>
-
-    </section>
-
-
-    <!-- ================= FEATURED GAME ================= -->
-
-    <section class="game-featured">
-
-      <!-- GAME VISUAL -->
-
-      <div class="game-featured-visual">
-
-        <div class="game-screen">
-
-          <div class="game-screen-top">
-            <span class="game-dot red"></span>
-            <span class="game-dot yellow"></span>
-            <span class="game-dot green"></span>
-          </div>
-
-          <div class="game-screen-content">
-
-            <i class="fas fa-crosshairs game-crosshair"></i>
-
-            <div class="game-title-display">
-              <span>GUN</span>
-              <strong>DUEL</strong>
-            </div>
-
-            <p>OFFLINE FIGHTING GAME</p>
-
-            <div class="game-screen-icons">
-
-              <span>
-                <i class="fas fa-user"></i>
-              </span>
-
-              <span>
-                <i class="fas fa-bolt"></i>
-              </span>
-
-              <span>
-                <i class="fas fa-crosshairs"></i>
-              </span>
-
-            </div>
-
-          </div>
-
-        </div>
-
-      </div>
-
-
-      <!-- GAME INFORMATION -->
-
-      <div class="game-featured-content">
-
-        <span class="game-label">
-          FEATURED GAME
+      <section class="section-heading page-hero">
+        <span class="section-tag">
+          <i class="fas fa-gamepad"></i>
+          MY GAME PROJECTS
         </span>
 
-        <h2>Gun-Duel</h2>
+        <h1><span class="gradient-text">GAME</span> ARCADE</h1>
 
-        <p class="game-description">
-          Gun-Duel is an offline fighting game created as a BCA project.
-          The game supports two-player gameplay and a player-versus-bot mode.
+        <p>
+          A collection of games and interactive experiments created while
+          exploring game development, programming and creative technologies.
+        </p>
+      </section>
+
+      <!-- ================= FEATURED GAME : GUN-DUEL ================= -->
+
+      <section class="game-featured">
+        <div class="game-featured-visual">
+          <div class="game-screen">
+            <div class="game-screen-top">
+              <span class="game-dot red"></span>
+              <span class="game-dot yellow"></span>
+              <span class="game-dot green"></span>
+            </div>
+
+            <div class="game-screen-content">
+              <i class="fas fa-crosshairs game-crosshair"></i>
+
+              <div class="game-title-display">
+                <span>GUN</span>
+                <strong>DUEL</strong>
+              </div>
+
+              <p>OFFLINE FIGHTING GAME</p>
+
+              <div class="game-screen-icons">
+                <span>
+                  <i class="fas fa-user"></i>
+                </span>
+
+                <span>
+                  <i class="fas fa-bolt"></i>
+                </span>
+
+                <span>
+                  <i class="fas fa-crosshairs"></i>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- GUN-DUEL INFORMATION -->
+
+        <div class="game-featured-content">
+          <span class="game-label">FEATURED GAME</span>
+
+          <h2>Gun-Duel</h2>
+
+          <p class="game-description">
+            Gun-Duel is an offline fighting game created as a BCA project. The
+            game supports two-player gameplay and a player-versus-bot mode.
+            Challenge your opponent, explore different levels and enjoy an
+            interactive fighting experience.
+          </p>
+
+          <div class="game-info-tags">
+            <span>
+              <i class="fas fa-gamepad"></i>
+              Fighting Game
+            </span>
+
+            <span>
+              <i class="fas fa-power-off"></i>
+              Offline
+            </span>
+
+            <span>
+              <i class="fas fa-users"></i>
+              2 Players
+            </span>
+
+            <span>
+              <i class="fas fa-robot"></i>
+              Bot Mode
+            </span>
+          </div>
+
+          <div class="project-tech">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+          </div>
+
+          <div class="project-buttons">
+            <a
+              href="https://viraljainhacker.github.io/Gun-Duel/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn primary-btn"
+            >
+              <i class="fas fa-play"></i>
+              Play Gun-Duel
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= GUN-DUEL FEATURES ================= -->
+
+      <section class="games-details">
+        <div class="section-heading">
+          <span class="section-tag">
+            <i class="fas fa-star"></i>
+            GAME FEATURES
+          </span>
+
+          <h2>
+            Built For
+            <span class="gradient-text">Fun</span>
+          </h2>
+
+          <p>
+            Explore some of the main concepts and features included in Gun-Duel.
+          </p>
+        </div>
+
+        <div class="game-feature-grid">
+          <!-- TWO PLAYERS -->
+
+          <div class="game-feature-card">
+            <div class="game-feature-icon">
+              <i class="fas fa-users"></i>
+            </div>
+
+            <h3>Two Players</h3>
+
+            <p>The game supports two players playing on the same device.</p>
+          </div>
+
+          <!-- PLAYER VS BOT -->
+
+          <div class="game-feature-card">
+            <div class="game-feature-icon">
+              <i class="fas fa-robot"></i>
+            </div>
+
+            <h3>Player vs Bot</h3>
+
+            <p>
+              A single player can also play against a computer-controlled bot.
+            </p>
+          </div>
+
+          <!-- OFFLINE GAMEPLAY -->
+
+          <div class="game-feature-card">
+            <div class="game-feature-icon">
+              <i class="fas fa-power-off"></i>
+            </div>
+
+            <h3>Offline Gameplay</h3>
+
+            <p>Gun-Duel is designed as an offline fighting game experience.</p>
+          </div>
+
+          <!-- MULTIPLE LEVELS -->
+
+          <div class="game-feature-card">
+            <div class="game-feature-icon">
+              <i class="fas fa-layer-group"></i>
+            </div>
+
+            <h3>Multiple Levels</h3>
+
+            <p>
+              The game is designed with multiple levels and progressive
+              gameplay.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= ABOUT GUN-DUEL ================= -->
+
+      <section class="game-about">
+        <div class="game-about-content">
+          <span class="section-tag">
+            <i class="fas fa-info-circle"></i>
+            ABOUT THE GAME
+          </span>
+
+          <h2>
+            From Idea To
+            <span class="gradient-text">Game</span>
+          </h2>
+
+          <p>
+            Gun-Duel is one of my game development experiments where I combined
+            HTML, CSS and JavaScript to create an interactive fighting game.
+          </p>
+
+          <p>
+            The project focuses on gameplay interaction, player controls, game
+            logic and creating an enjoyable browser-based experience.
+          </p>
+
+          <p>
+            This project is also part of my journey of learning development and
+            experimenting with different types of applications.
+          </p>
+        </div>
+
+        <div class="game-about-stats">
+          <div class="game-stat">
+            <i class="fas fa-gamepad"></i>
+            <strong>04</strong>
+            <span>Total Games</span>
+          </div>
+
+          <div class="game-stat">
+            <i class="fas fa-users"></i>
+            <strong>02</strong>
+            <span>Players</span>
+          </div>
+
+          <div class="game-stat">
+            <i class="fas fa-code"></i>
+            <strong>03</strong>
+            <span>Technologies</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= OTHER GAMES ================= -->
+
+      <section class="games-details">
+        <div class="section-heading">
+          <span class="section-tag">
+            <i class="fas fa-layer-group"></i>
+            MORE GAME PROJECTS
+          </span>
+
+          <h2>
+            Explore Other
+            <span class="gradient-text">Games</span>
+          </h2>
+
+          <p>
+            Apart from Gun-Duel, I am also working on different gaming concepts
+            and interactive experiences.
+          </p>
+        </div>
+
+        <div class="game-grid">
+          <!-- SHADOW CLASH -->
+
+          <article class="game-card">
+            <div class="game-card-content">
+              <div class="game-icon">🥷</div>
+
+              <span class="game-label">ACTION • FIGHTING</span>
+
+              <h3>Shadow Clash</h3>
+
+              <p>
+                An action-inspired fighting game featuring dynamic gameplay
+                concepts, combat mechanics and an immersive gaming experience.
+              </p>
+
+              <div class="project-tags">
+                <span>Game Development</span>
+                <span>Gameplay</span>
+                <span>Interactive Design</span>
+              </div>
+
+              <div class="game-status">
+                <span class="status-dot"></span>
+                In Development
+              </div>
+            </div>
+          </article>
+
+          <!-- NEON BALL -->
+
+          <article class="game-card">
+            <div class="game-card-content">
+              <div class="game-icon">🔮</div>
+
+              <span class="game-label">ARCADE • ACTION</span>
+
+              <h3>Neon Ball</h3>
+
+              <p>
+                A neon-themed arcade game project exploring interactive
+                gameplay, movement mechanics, visual effects and engaging game
+                design.
+              </p>
+
+              <div class="project-tags">
+                <span>Game Development</span>
+                <span>Arcade</span>
+                <span>Interactive Design</span>
+              </div>
+
+              <div class="game-status">
+                <span class="status-dot"></span>
+                In Development
+              </div>
+            </div>
+          </article>
+
+          <!-- ANACONDA GAME -->
+
+          <article class="game-card">
+            <div class="game-card-content">
+              <div class="game-icon">🐍</div>
+
+              <span class="game-label">ARCADE • CLASSIC</span>
+
+              <h3>Anaconda Game</h3>
+
+              <p>
+                A modern take on the classic snake-style arcade game, exploring
+                movement, controls, gameplay mechanics and interactive
+                entertainment.
+              </p>
+
+              <div class="project-tags">
+                <span>Game Development</span>
+                <span>JavaScript</span>
+                <span>Arcade</span>
+              </div>
+
+              <div class="game-status">
+                <span class="status-dot"></span>
+                In Development
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- ================= MORE GAMES COMING SOON ================= -->
+
+      <section class="games-coming-soon">
+        <div class="section-heading">
+          <span class="section-tag">
+            <i class="fas fa-rocket"></i>
+            MORE TO COME
+          </span>
+
+          <h2>
+            More Games
+            <span class="gradient-text">Coming Soon</span>
+          </h2>
+
+          <p>
+            This section will be updated as I build and release more games and
+            interactive projects.
+          </p>
+        </div>
+
+        <div class="coming-soon-card">
+          <div class="coming-soon-icon">
+            <i class="fas fa-gamepad"></i>
+          </div>
+
+          <h3>Next Game</h3>
+
+          <p>
+            Currently exploring new gaming concepts. Stay tuned for the next
+            gaming project.
+          </p>
+
+          <span class="coming-badge">COMING SOON</span>
+        </div>
+      </section>
+
+      <!-- ================= CTA ================= -->
+
+      <section class="project-cta">
+        <span class="section-tag">
+          <i class="fas fa-play"></i>
+          READY TO PLAY?
+        </span>
+
+        <h2>
+          Try
+          <span class="gradient-text">Gun-Duel</span>
+        </h2>
+
+        <p>
+          Open the game and experience the project directly in your browser.
         </p>
 
-
-        <div class="game-info-tags">
-
-          <span>
-            <i class="fas fa-gamepad"></i>
-            Fighting Game
-          </span>
-
-          <span>
-            <i class="fas fa-wifi-slash"></i>
-            Offline
-          </span>
-
-          <span>
-            <i class="fas fa-users"></i>
-            2 Players
-          </span>
-
-          <span>
-            <i class="fas fa-robot"></i>
-            Bot Mode
-          </span>
-
-        </div>
-
-
-        <div class="project-tech">
-
-          <span>HTML</span>
-          <span>CSS</span>
-          <span>JavaScript</span>
-
-        </div>
-
-
         <div class="project-buttons">
-
           <a
             href="https://viraljainhacker.github.io/Gun-Duel/"
             target="_blank"
             rel="noopener noreferrer"
             class="btn primary-btn"
           >
-            <i class="fas fa-play"></i>
-            Play Gun-Duel
+            <i class="fas fa-gamepad"></i>
+            Play Now
           </a>
 
-          <a
-            href="https://github.com/viraljainhacker"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="btn secondary-btn"
-          >
-            <i class="fab fa-github"></i>
-            GitHub
+          <a href="projects.html" class="btn secondary-btn">
+            <i class="fas fa-code"></i>
+            View Projects
           </a>
-
         </div>
+      </section>
+    </main>
 
-      </div>
-
-    </section>
-
-
-    <!-- ================= GAME FEATURES ================= -->
-
-    <section class="games-details">
-
-      <div class="section-heading">
-
-        <span class="section-tag">
-          <i class="fas fa-star"></i>
-          GAME FEATURES
-        </span>
-
-        <h2>
-          Built For
-          <span class="gradient-text">Fun</span>
-        </h2>
-
-        <p>
-          Some of the main concepts and features included in Gun-Duel.
-        </p>
-
-      </div>
-
-
-      <div class="game-feature-grid">
-
-        <div class="game-feature-card">
-
-          <div class="game-feature-icon">
-            <i class="fas fa-users"></i>
-          </div>
-
-          <h3>Two Players</h3>
-
-          <p>
-            The game supports two players playing on the same device.
-          </p>
-
-        </div>
-
-
-        <div class="game-feature-card">
-
-          <div class="game-feature-icon">
-            <i class="fas fa-robot"></i>
-          </div>
-
-          <h3>Player vs Bot</h3>
-
-          <p>
-            A single player can also play against a computer-controlled bot.
-          </p>
-
-        </div>
-
-
-        <div class="game-feature-card">
-
-          <div class="game-feature-icon">
-            <i class="fas fa-wifi-slash"></i>
-          </div>
-
-          <h3>Offline Gameplay</h3>
-
-          <p>
-            Gun-Duel is designed as an offline fighting game experience.
-          </p>
-
-        </div>
-
-
-        <div class="game-feature-card">
-
-          <div class="game-feature-icon">
-            <i class="fas fa-layer-group"></i>
-          </div>
-
-          <h3>Multiple Levels</h3>
-
-          <p>
-            The game is designed with multiple levels and progressive gameplay.
-          </p>
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-    <!-- ================= GAME STATS ================= -->
-
-    <section class="game-about">
-
-      <div class="game-about-content">
-
-        <span class="section-tag">
-          <i class="fas fa-info-circle"></i>
-          ABOUT THE GAME
-        </span>
-
-        <h2>
-          From Idea To
-          <span class="gradient-text">Game</span>
-        </h2>
-
-        <p>
-          Gun-Duel is one of my game development experiments where I combined
-          HTML, CSS and JavaScript to create an interactive fighting game.
-        </p>
-
-        <p>
-          The project focuses on gameplay interaction, player controls,
-          game logic and creating an enjoyable browser-based experience.
-        </p>
-
-        <p>
-          This project is also part of my journey of learning development
-          and experimenting with different types of applications.
-        </p>
-
-      </div>
-
-
-      <div class="game-about-stats">
-
-        <div class="game-stat">
-          <i class="fas fa-gamepad"></i>
-          <strong>01</strong>
-          <span>Game</span>
-        </div>
-
-        <div class="game-stat">
-          <i class="fas fa-users"></i>
-          <strong>2</strong>
-          <span>Players</span>
-        </div>
-
-        <div class="game-stat">
-          <i class="fas fa-code"></i>
-          <strong>3</strong>
-          <span>Technologies</span>
-        </div>
-
-      </div>
-
-    </section>
-
-
-    <!-- ================= COMING SOON ================= -->
-
-    <section class="games-coming-soon">
-
-      <div class="section-heading">
-
-        <span class="section-tag">
-          <i class="fas fa-rocket"></i>
-          MORE TO COME
-        </span>
-
-        <h2>
-          More Games
-          <span class="gradient-text">Coming Soon</span>
-        </h2>
-
-        <p>
-          This section will be updated as I build and release more games
-          and interactive projects.
-        </p>
-
-      </div>
-
-
-      <div class="coming-soon-card">
-
-        <div class="coming-soon-icon">
-          <i class="fas fa-gamepad"></i>
-        </div>
-
-        <h3>Next Game</h3>
-
-        <p>
-          Currently in development. Stay tuned for the next gaming project.
-        </p>
-
-        <span class="coming-badge">
-          COMING SOON
-        </span>
-
-      </div>
-
-    </section>
-
-
-    <!-- ================= CTA ================= -->
-
-    <section class="project-cta">
-
-      <span class="section-tag">
-        <i class="fas fa-play"></i>
-        READY TO PLAY?
-      </span>
-
-      <h2>
-        Try
-        <span class="gradient-text">Gun-Duel</span>
-      </h2>
-
-      <p>
-        Open the game and experience the project directly in your browser.
-      </p>
-
-      <div class="project-buttons">
-
-        <a
-          href="https://viraljainhacker.github.io/Gun-Duel/"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="btn primary-btn"
-        >
-          <i class="fas fa-gamepad"></i>
-          Play Now
-        </a>
-
-        <a
-          href="projects.html"
-          class="btn secondary-btn"
-        >
-          <i class="fas fa-code"></i>
-          View Projects
-        </a>
-
-      </div>
-
-    </section>
-
-  </main>
-
-
-    <!-- =========================
-         FOOTER
-    ========================== -->
+    <!-- ================= FOOTER ================= -->
 
     <footer>
       <div class="footer-content">
@@ -469,31 +543,24 @@
         </div>
 
         <div class="footer-links">
-          <a href="index.html"> Home </a>
-
-          <a href="about.html"> About </a>
-
-          <a href="projects.html"> Projects </a>
-
-          <a href="games.html"> Games </a>
-
-          <a href="certifications.html"> Certificates </a>
-
-          <a href="gallery.html"> Gallery </a>
-
-          <a href="contact.html"> Contact </a>
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="projects.html">Projects</a>
+          <a href="games.html">Games</a>
+          <a href="certifications.html">Certificates</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="contact.html">Contact</a>
         </div>
       </div>
 
       <div class="footer-bottom">
         <p>Viral Jain</p>
-
         <p>Built with HTML, CSS & JavaScript.</p>
       </div>
     </footer>
 
+    <!-- ================= JAVASCRIPT ================= -->
 
-  <script src="script.js"></script>
-
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
